@@ -1,0 +1,31 @@
+﻿@model List<Categorie>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index Categorie</h1>
+
+<table>
+    <thead>
+        <tr>
+            Categorie Name :
+        </tr>
+        <tr>
+            Display Order :
+        </tr>
+        <tr>
+            DateTime created :
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var c in Model)
+        {
+            <tr>@c.Name</tr>
+            <tr>@c.DisplayOrder</tr>
+            <tr>@c.CreatedDateTime</tr>
+        }
+        
+    </tbody>
+</table>

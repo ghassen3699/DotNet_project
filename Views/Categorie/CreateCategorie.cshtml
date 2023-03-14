@@ -1,0 +1,15 @@
+﻿@model Categorie
+
+<div>
+	<form method="post">
+		<h2>Entre your Categorie Name : </h2>
+		<input asp-for="Name" />
+
+		<h2>Entre your Categorie Name : </h2>
+		<input asp-for="DisplayOrder" />
+
+		<button type="submit">Send</button>
+		<a asp-controller="Categorie" asp-action="Index">Cancel</a>
+	</form>
+</div>
+
