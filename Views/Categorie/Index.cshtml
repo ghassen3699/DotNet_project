@@ -25,6 +25,10 @@
             <tr>@c.Name</tr>
             <tr>@c.DisplayOrder</tr>
             <tr>@c.CreatedDateTime</tr>
+            <tr>
+                <a asp-controller="Categorie" asp-action="EditCategorie" asp-route-id="@c.Id"> Update </a>
+            </tr>
+            <br />
         }
         
     </tbody>
